@@ -1,0 +1,164 @@
+<%- include('includes/header') %>
+  
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item @@home__active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item @@contact__active">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+          </div>
+  
+
+
+
+          <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container py-1">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+          <!-- //toggle switch for light and dark theme -->
+      </nav>
+
+    </div>
+  </header>
+  <!--/header-->
+
+
+
+<!-- Service breadcrumb -->
+<section class="w3l-about-breadcrumb text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container py-lg-5 py-md-4">
+            <h2 class="title pt-md-5 pt-4"><%= product.name %></h2>
+        </div>
+        <div class="hero-overlay"></div>
+    </div>
+</section>
+<!-- //Service breadcrumb -->
+
+
+
+ <!-- service section -->
+ <section class="w3l-features py-5" id="work">
+    <div class="container py-lg-5 py-md-4 py-2">
+
+
+        <div class="row main-cont-wthree-2">
+            <div class="col-lg-6">
+                <div class="service-grid-left">
+                    <h3 class="title-service mb-md-4 mb-3">More Details</h3>
+                    <p class="text-para mb-lg-2 mb-0">
+                        <%= product.description1 %>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 service-grid-right mt-lg-0">
+                <img src="assets/images/prod-image/<%= product.imageCover1 %>" alt="" class="img-fluid">
+            </div>
+        </div>
+
+
+
+        <div class="row mt-lg-4 mt-5">
+            <div class="col-lg-6 service-grid-right mb-lg-0">
+                <img src="assets/images/prod-image/<%= product.imageCover3 %>"  alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <div class="service-grid-left">
+                    <h3 class="title-service mb-md-4 mb-3">More Details</h3>
+                    <p class="text-para mb-lg-2 mb-0">
+                        <%= product.description2 %>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row main-cont-wthree-2">
+          <div class="col-lg-6">
+              <div class="service-grid-left">
+                  <h3 class="title-service mb-md-4 mb-3">More Details</h3>
+                  <p class="text-para mb-lg-2 mb-0">
+                      <%= product.description3 %>
+                  </p>
+              </div>
+          </div>
+          <div class="col-lg-6 service-grid-right mt-lg-0">
+              <img src="assets/images/prod-image/<%= product.imageCover2 %>" alt="" class="img-fluid">
+          </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!-- /quote-6-->
+<section class="w3l-quote-6">
+    <div class="quote-info py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="quote-grids-info row align-items-center">
+                <div class="quote-gd-left col-lg-6 pr-lg-5">
+                    <h6 class="title-small text-light mb-2">Contact Us</h6>
+                    <h3 class="title-big text-white">Reach out to us via Email or Phone contact</h3>
+                    <div class="mt-4">
+                        <div class="quote-sec-info">
+                            <div class="appyl-sub-icon">
+                                <span class="fa fa-map"></span>
+                            </div>
+                            <div class="appyl-sub-icon-info">
+                                <h5>Our Location</h5>
+                                <p>Block H, Shop1, Coker Marble Line, Badagry Expressway, Coker Bus stop, Lagos.</p>
+                            </div>
+                        </div>
+                        <div class="quote-sec-info">
+                            <div class="appyl-sub-icon">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="appyl-sub-icon-info">
+                                <h5>Phone Numbers</h5>
+                                <p><a href="">08034308660</a></p>
+                                <p><a href="">08029449330</a></p>
+                            </div>
+                        </div>
+                        <div class="quote-sec-info">
+                            <div class="appyl-sub-icon">
+                                <span class="fa fa-envelope-o"></span>
+                            </div>
+                            <div class="appyl-sub-icon-info">
+                                <h5>Email Addresses</h5>
+                                <p> <a href="">dejerrinterbizz@gmail.com</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="quote-gd-right col-lg-6 mt-lg-0 mt-5">
+                        <img class="quote-form mx-auto" src="assets/images/b1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //quote-6-->
+
+
+
+
+
+<%- include('includes/footer') %>
